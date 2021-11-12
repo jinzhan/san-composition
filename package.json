@@ -23,7 +23,7 @@
     "San Composition API"
   ],
   "files": [
-    "index.js",
+    "index.ts",
     "dist"
   ],
   "repository": {
