@@ -81,6 +81,7 @@ module.exports = function(config) {
   if (process.argv.indexOf('--coverage') > -1) {
     configuration.reporters.push('coverage','karma-remap-istanbul');
     configuration.preprocessors['dist/index.umd.js'] = ['coverage','sourcemap'];
+    configuration.preprocessors['dist/index.umd.ts'] = ['coverage','sourcemap'];
     configuration.remapIstanbulReporter = {
         reports:{
             html: 'coverage/html',

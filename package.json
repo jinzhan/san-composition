@@ -15,7 +15,7 @@
     "pretest": "npm run build",
     "test": "npm run test:unit",
     "test:unit": "karma start ./test/karma.conf.js --single-run",
-    "test:cov": "npm run test -- -- --coverage",
+    "test:cov": "cp dist/index.umd.js dist/index.umd.ts && run test -- -- --coverage",
     "lint": "eslint index.ts"
   },
   "keywords": [
