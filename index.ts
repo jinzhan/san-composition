@@ -6,7 +6,6 @@
  *
  * @file San组合式API
  */
-
 interface DataObj {
     [key: string]: any;
 }
@@ -125,7 +124,7 @@ function componentInitWatch(this: any) {
 /**
  * 通过组合式API定义San组件，返回组件类
  */
-export function defineComponent(creator: Creator, san: {[key: string]: any, Component: FunctionVar}): FunctionVar {
+export function defineComponent(creator: Creator, san: SanStaticGlobal): SanComponent<any> {
     let defineContext: Context = {
         creator: creator
     };
